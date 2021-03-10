@@ -1,0 +1,37 @@
+body{
+    height: 80vh;
+
+}
+.container{
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.img, .btnButton{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img{
+    margin-top: 20px;
+}
+.textoFrase {
+    text-align: center;
+    color: white;
+}
+
+button.btnButton {
+    background: yellow;
+    border: none;
+    padding: 15px 42px;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    border-radius: 30px;
+    box-shadow: 0px 1px 6px #e0dc5d;
+    cursor: pointer;
+    border: 4px solid red;
+}
