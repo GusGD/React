@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color:  var(--backgroundFooter);
+    height: 60px;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
