@@ -19,9 +19,3 @@ class App extends Component{
 
 export default App;
 
-/*
-https://api.themoviedb.org/3/movie/550?api_key=cdb98ea705f6d117b95c67ad2f1aa340
-
-
-cdb98ea705f6d117b95c67ad2f1aa340
-*/

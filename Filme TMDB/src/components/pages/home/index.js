@@ -15,9 +15,12 @@ class Home extends Component{
     componentDidMount(){
         this.loadFilmes();
     }
-
+    /*
+https://api.themoviedb.org/3/movie/550?api_key=cdb98ea705f6d117b95c67ad2f1aa340
+cdb98ea705f6d117b95c67ad2f1aa340
+*/
     loadFilmes(){
-        let url = 'https://sujeitoprogramador.com/r-api/?api=filmes';
+        let url = 'https://api.themoviedb.org/3/movie/550?api_key=cdb98ea705f6d117b95c67ad2f1aa340';
         fetch(url)
             .then((res) => res.json())
             .then((json) => {
@@ -32,11 +35,9 @@ class Home extends Component{
                     {
                         this.state.filmes.map((filmes) => {
                             return (
-                                <article key={filmes.imdbID}>
-                                    <strong className="nomeFilme"> {filmes.Title}</strong>
-                                    <strong className="nomeFilme"> {filmes.Year}</strong>
-                                    <strong className="nomeFilme"> {filmes.Type}</strong>
-                                    <img className="img-Fluid" src={filmes.Poster} alt="filme"/>
+                                <article key={filmes.id}>
+                                    <strong className="nomeFilme"> {filmes.original_title}</strong>
+                                    <strong className="nomeFilme"> {filmes.release_date}</strong>
                                     <Link to={`/filme/${filmes.id}`}>acessar</Link>
                                 </article>
                             )
